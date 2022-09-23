@@ -1,17 +1,20 @@
-let arr3 = ['String1', 'String2', 'String3'];
+let arrayString = ['String1', 'String2', 'String3'];
 
-const arrStr = (array) => {
+const FunctionArrayString = (array) => {
+  let i = 0
+  let f = array.length
 
-    let i = 0
-    let f = array.length
+  while (i < f) {
+    let string = array.pop();
+    console.log(string);
+    alert(string)
+    i++;
 
-    while (i < f) {
-        let string = array.pop();
-        console.log(string);
-        alert(string)
-        i++;
+  }
+    console.log(arrayString)
+};
 
-    }
-    console.log(array)
-}
-arrStr(arr3)
+arrStr(array)
+
+// Написать функцию, принимающую массив строк и выводящих их на экран, 
+// используя цикл while. Элементы из массива извлекать с помощью оператора .pop()
