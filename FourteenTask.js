@@ -1,23 +1,25 @@
-let funcOp = (num1, num2, operation) => {
-    switch (operation) {
-        case '+':
-            return num1 + num2;
-            break;
-        case '-':
-            return num1 - num2;
-            break;
-        case '*':
-            return num1 * num2;
-            break;
-        case '/':
-            return num1 / num2;
-            break;
-    }
+const functionArithmeticOperations = (num1, num2, operation) => {
+  switch (operation) {
+      case '+':
+          return num1 + num2;
+          break;
+      case '-':
+          return num1 - num2;
+          break;
+      case '*':
+          return num1 * num2;
+          break;
+      case '/':
+          return num1 / num2;
+          break;
+  }
 };
 
-console.log(funcOp(12, 5, '-'))
+console.log(functionArithmeticOperations(12, 5, '-'))
 
-
+// Написать функцию, принимающую два числа 
+// и любую операцию над этими числами (сложение, вычитание или др.). 
+// В функции выполнить эту операцию и вернуть результат.
 
 
 
