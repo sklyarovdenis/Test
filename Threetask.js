@@ -14,7 +14,7 @@ const FunctionArrayString = (array) => {
     console.log(arrayString)
 };
 
-arrStr(array)
+FunctionArrayString(array)
 
 // Написать функцию, принимающую массив строк и выводящих их на экран, 
 // используя цикл while. Элементы из массива извлекать с помощью оператора .pop()
