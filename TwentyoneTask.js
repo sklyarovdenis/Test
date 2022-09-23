@@ -1,15 +1,18 @@
-let funcN = (usDate) => {
+const functionTransformation = (userData) => {
     
-    let {first_name, last_name, email} = usDate;
+    const {first_name, last_name, email} = userData;
 
-    let lname = (`"${last_name} ${first_name} E-mail:${email}"`)
-    
-    console.log(lname)
+    const StringNameUser = (`"${last_name} ${first_name} E-mail:${email}"`);
+
+    return StringNameUser
 };
 
-funcN({ 
+console.log(functionTransformation({
     first_name: "Ivan", 
     last_name: "Ivanov", 
-    email: "ivanov@pochta.com" 
-})
+    email: "ivanov@pochta.com"
+}))
 
+// Написать функцию, которая принимает на вход объект вида 
+// { first_name: ‘Ivan’, last_name: ‘Ivanov’, email: ‘ivanov@pochta.com’ }
+// и возвращает строку вида: “Ivanov Ivan E-mail: ivanov@pochta.com”.
